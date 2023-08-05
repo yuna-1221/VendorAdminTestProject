@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/product.list', [App\Http\Controllers\ProductListController::class, 'pageLoad'])->name('product.list');
+
+Route::post('/product.list', [App\Http\Controllers\ProductListController::class, 'searchSubmit'])->name('product.list');
